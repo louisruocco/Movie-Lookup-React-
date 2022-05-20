@@ -5,4 +5,4 @@ A simple movie lookup app, where users can input the movie title of their choice
 ## Technologies Used:
 
 - React
-- IMdB API
+- IMDb API
