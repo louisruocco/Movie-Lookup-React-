@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Movie from "./movie"
 import './App.css';
 
@@ -31,8 +32,8 @@ const App = () => {
   }, [query])
 
   return (
-    <div className = "App">
-      <h1>Movie Lookup</h1>
+      <div className = "App">
+      <h1 className = "title">Movie Lookup</h1>
       <form onSubmit={getSearch} className="search-form">
         <input type="text" className="search" value={search} placeholder="Search for a Movie..." onChange={updateSearch}/>
         <button className="search-btn">Search</button>
@@ -45,7 +46,7 @@ const App = () => {
             image={movie.image}
          />
       ))}
-    </div>
+      </div>
   )
 }
 
